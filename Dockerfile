@@ -8,6 +8,7 @@ WORKDIR /app
 
 COPY package*.json ./
 RUN npm ci
+ENV SERVER_MESSAGE="Hello, this is self study from Hexlet!"
 
 COPY . .
 
