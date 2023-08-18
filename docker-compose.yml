@@ -4,6 +4,8 @@ services:
   app:
     build: .
     image: hexletcomponents/devops-example-app
+    environment:
+      SERVER_MESSAGE: "Hello, this is self study from Hexlet!"
 
   caddy:
     build:
